@@ -1,6 +1,8 @@
-const http = require('http');
-http.createServer((req,resp)=>{
-resp.writeHead(200,{'Content-Type':'application\json'});
-resp.write(JSON.stringify({name:'Hamza' ,email:'Hamzayousaf420@gmail.com'}));
-resp.end();
-}).listen(5000);
+let a=10;
+let b=20;
+
+setTimeout(()=>{
+    b=30;
+},2000)
+
+console.log(a+b);
