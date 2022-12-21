@@ -14,9 +14,14 @@ app.get('/profile',(req,resp)=>{
     const user={
         name:'Hamza yousaf',
         email:'hamzayousif420@gmail.com',
-        city:'Multan'
+        city:'Multan',
+     skills:['Node','java','c++']
     }
     resp.render('pofile',{user});
+});
+
+app.get('/login',(req,resp)=>{
+    resp.render('login');
 });
 
 app.get('/contact',(req,resp)=>{
@@ -28,4 +33,4 @@ app.get('/help',(req,resp)=>{
 });
 
 
-app.listen(4200);
+app.listen(5000);
